@@ -1,0 +1,15 @@
+// Public key, using Ed-BabyJubJub
+struct PublicKey {
+    // Curve point.
+    field x;
+    field y;
+}
+
+// Signature, using Ed-BabyJubJub
+struct Signature {
+    // R: Curve point. Hidden version of the per-message nonce.
+    field Rx;
+    field Ry;
+    // S: Field element. Signature to be verified.
+    field S;
+}

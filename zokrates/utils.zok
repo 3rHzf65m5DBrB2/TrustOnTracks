@@ -1,0 +1,35 @@
+from "./structs" import AttestedDocument, ProcessedDocument,
+    Document, AttestationChain;
+
+const u32[8] sha256PaddingFor32Bytes = [
+    2147483648, 0, 0, 0, 0, 0, 0, 256
+];
+
+const u32[16] sha256PaddingFor64Bytes = [
+    2147483648, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 512
+];
+
+const u32[8] sha256PaddingFor96ytes = [
+    2147483648, 0, 0, 0, 0, 0, 0, 768
+];
+
+const u32[16] sha256PaddingFor128Bytes = [
+    2147483648, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1024
+];
+
+def prepare_document(
+    Document document,
+    AttestationChain chain) -> (AttestedDocument, ProcessedDocument) {
+
+    AttestedDocument attdoc = AttestedDocument {
+        document: document,
+        chain: chain
+    };
+
+    ProcessedDocument procdoc = ProcessedDocument {
+        document:document ,
+        attestor: chain[0].attestor
+    };
+
+    return (attdoc, procdoc);
+}

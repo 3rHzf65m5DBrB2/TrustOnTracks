@@ -1,0 +1,47 @@
+from "./eddsa_common" import PublicKey, Signature;
+
+type HashSHA256 = u32[8];
+type SHA256Padding = u32[16];
+
+type DocumentIdentifier = HashSHA256;
+
+type DocumentType = u32;
+type Attributes = u32;
+
+// Tree depth
+const u32 MAX_ATTESTATIONS = 3;
+
+struct Role {
+    Attributes documentTypes;
+}
+
+struct Document {
+    DocumentType documentType;  //  4
+    DocumentIdentifier identifier; // 32 Document Hash => Private
+    DocumentIdentifier referenceDocuments; // 32 bytes
+}
+
+struct Attestor {
+    Role role;
+    PublicKey publicKey;
+}
+
+struct Attestation {
+    bool is_set;
+    Attestor attestor;
+    SHA256Padding sha256Padding;
+    Signature signature; // Signature over previous in list and curr action
+}
+
+// Maximum tree depth
+type AttestationChain = Attestation[MAX_ATTESTATIONS];
+
+struct AttestedDocument {
+   Document document;
+   AttestationChain chain;
+}
+
+struct ProcessedDocument {
+    Document document;
+    Attestor attestor;
+}

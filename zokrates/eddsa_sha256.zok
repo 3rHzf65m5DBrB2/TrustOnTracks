@@ -1,0 +1,131 @@
+from "./structs" import HashSHA256, SHA256Padding, Document, Attestor;
+from "./eddsa_common" import PublicKey, Signature;
+import "./verifyEddsa";
+
+import "hashes/sha256/sha256" as sha256;
+import "utils/pack/u32/nonStrictUnpack256" as unpack256u;
+import "utils/casts/u32_8_to_bool_256" as u32_8_to_bool_256;
+
+def hash_signed_data<N>(
+    PublicKey signerPublicKey,
+    u32[N][16] paddedData,
+    Signature signature) -> HashSHA256 {
+
+    u32[8] signatureRx = unpack256u(signature.Rx);
+    u32[8] publicKeyX = unpack256u(signerPublicKey.x);
+
+    u32[N+1][16] hash_input = [
+        [
+            ...signatureRx,
+            ...publicKeyX
+        ],
+        ...paddedData
+    ];
+
+    u32[8] hash = sha256(hash_input);
+
+    return hash;
+}
+
+def hash_signed_document(
+    Document document,
+    PublicKey signerPublicKey,
+    Signature signature,
+    SHA256Padding sha256Padding
+    ) -> HashSHA256 {
+
+    // Split reference doc into 6 + 2
+    u32[7] referencePart1 = document.referenceDocuments[0..7];
+    u32[1] referencePart2 = document.referenceDocuments[7..8];
+    u32 action = 0;
+
+    u32[2][16] serializedDocument = [
+        [
+            document.documentType, // 4
+            ...document.identifier, // 32
+            ...referencePart1
+        ],
+        [
+            ...referencePart2,
+            ...sha256Padding[1..16]
+        ]
+    ];
+
+    return hash_signed_data(signerPublicKey, serializedDocument, signature);
+}
+
+def hash_signed_attestor(
+    Attestor attestor,
+    PublicKey signerPublicKey,
+    Signature signature,
+    SHA256Padding sha256Padding) -> HashSHA256 {
+
+    u32[8] attestorPublicKeyX = unpack256u(attestor.publicKey.x);
+    u32[8] attestorPublicKeyY = unpack256u(attestor.publicKey.y);
+    // Split publicKeyY
+    u32[7] attestorPublicKeyY1 = attestorPublicKeyY[0..7];
+    u32[1] attestorPublicKeyY2 = attestorPublicKeyY[7..8];
+
+    u32[2][16] serializedData = [
+        [
+            attestor.role.documentTypes,
+            ...attestorPublicKeyX,
+            ...attestorPublicKeyY1
+        ],
+        [
+            ...attestorPublicKeyY2,
+            ...sha256Padding[1..16]
+        ]
+    ];
+    return hash_signed_data(signerPublicKey, serializedData, signature);
+}
+
+def verify_signature(
+    PublicKey publicKey,
+    HashSHA256 hashedMessage,
+    Signature signature
+    ) -> bool {
+
+    bool[256] hash_bits = u32_8_to_bool_256(hashedMessage);
+
+    bool sigVfResult = verifyEddsa(
+        [signature.Rx, signature.Ry],
+        signature.S,
+        [publicKey.x, publicKey.y],
+        hash_bits
+    );
+
+    return sigVfResult;
+}
+
+def verify_document_signature(
+    PublicKey signerPublicKey,
+    Document document,
+    Signature signature,
+    SHA256Padding sha256Padding
+    ) -> bool {
+
+    u32[8] hash = hash_signed_document(
+        document, signerPublicKey, signature, sha256Padding
+    );
+
+    bool vfResult = verify_signature(signerPublicKey, hash, signature);
+
+    return vfResult;
+}
+
+def verify_attestor_signature(
+    PublicKey signerPublicKey,
+    Attestor attestor,
+    Signature signature,
+    SHA256Padding sha256Padding
+    ) -> bool {
+
+    u32[8] hash = hash_signed_attestor(
+        attestor, signerPublicKey, signature, sha256Padding
+    );
+
+    bool vfResult = verify_signature(signerPublicKey, hash, signature);
+
+    return vfResult;
+}

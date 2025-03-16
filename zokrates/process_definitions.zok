@@ -1,0 +1,92 @@
+from "./structs" import Role, Document, DocumentType,
+    AttestationChain, Attestation, ProcessedDocument,
+    HashSHA256, SHA256Padding, MAX_ATTESTATIONS;
+from "./utils" import sha256PaddingFor32Bytes, sha256PaddingFor128Bytes;
+import "hashes/sha256/sha256" as sha256;
+
+const DocumentType DOC_LH   = 0x00000001;
+const DocumentType DOC_SA   = 0x00000002;
+const DocumentType DOC_TR   = 0x00000004;
+const DocumentType DOC_PTD1 = 0x00000008;
+const DocumentType DOC_RS   = 0x00000010;
+const DocumentType DOC_SUC  = 0x00000020;
+const DocumentType DOC_SUC2 = 0x00000040;
+const DocumentType DOC_FGV1 = 0x00000080;
+const DocumentType DOC_FGV2 = 0x00000100;
+const DocumentType DOC_PTD  = 0x00000200;
+
+const u32 COUNT_DOCS_LH=9;
+
+type LastenHeftPhaseDocuments = Document[COUNT_DOCS_LH];
+type LastenHeftPhaseChain = AttestationChain[COUNT_DOCS_LH];
+type LastenHeftAttestationChains = AttestationChain[COUNT_DOCS_LH];
+
+def roleAllowsDocType(Role role, DocumentType doctype) -> bool {
+    return (role.documentTypes & doctype) == doctype;
+}
+
+def roleAllowsRoleDelegation(Role role, Role delegatedRole) -> bool {
+    return (role.documentTypes & delegatedRole.documentTypes) == delegatedRole.documentTypes;
+}
+
+// Role delegation policy
+def verify_chain_policy(Document document, AttestationChain chain) -> bool {
+    bool mut result = true;
+
+    Attestation documentAttestation = chain[0];
+
+    result = result && roleAllowsDocType(
+        documentAttestation.attestor.role,
+        document.documentType
+    );
+
+    // We need to check if chain[i-1] role.documentTypes is a subseteq
+    // chain[i].documentTypes
+    for u32 i in 1..MAX_ATTESTATIONS {
+        result = result && roleAllowsRoleDelegation(
+            chain[i].attestor.role,
+            chain[i-1].attestor.role
+            );
+    }
+
+    return result;
+}
+
+def verify_lh_policy(
+        ProcessedDocument sa,
+        ProcessedDocument tr,
+        ProcessedDocument ptd1,
+        ProcessedDocument rs,
+        ProcessedDocument suc,
+        ProcessedDocument suc2,
+        ProcessedDocument fgv1,
+        ProcessedDocument fgv2,
+        ProcessedDocument ptd
+    ) -> bool {
+    bool mut result = true;
+
+    // suc refs suc2
+    result = result && suc.document.referenceDocuments == sha256([
+        [
+            ...suc2.document.identifier,
+            ...sha256PaddingFor32Bytes
+        ]
+    ]);
+
+    // ptd refs sa, tr, ptd1, rs
+    result = result && ptd.document.referenceDocuments == sha256([
+        [
+            ...sa.document.identifier,
+            ...tr.document.identifier
+        ],
+        [
+            ...ptd1.document.identifier,
+            ...rs.document.identifier
+        ],
+        [
+            ...sha256PaddingFor128Bytes
+        ]
+    ]);
+
+    return result;
+}

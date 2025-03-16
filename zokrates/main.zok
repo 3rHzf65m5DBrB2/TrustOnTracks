@@ -1,0 +1,16 @@
+from "./process_definitions" import
+    LastenHeftAttestationChains, LastenHeftPhaseDocuments;
+import "./phase_lh" as verify_phase_lh;
+from "./eddsa_common" import PublicKey;
+
+def main(
+    PublicKey rootAuthorityPublicKey,
+    LastenHeftPhaseDocuments lhdocs,
+    private LastenHeftAttestationChains lhchains
+    ) -> bool {
+
+    bool result = verify_phase_lh(rootAuthorityPublicKey, lhdocs, lhchains);
+
+    return result;
+}
+

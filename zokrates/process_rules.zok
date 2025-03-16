@@ -1,0 +1,108 @@
+from "./structs" import AttestationChain, AttestedDocument, Document,
+    Attestor, Attestation, MAX_ATTESTATIONS;
+from "./eddsa_common" import PublicKey, Signature;
+from "./eddsa_sha256" import verify_document_signature,
+    verify_attestor_signature;
+from "./process_definitions" import verify_chain_policy;
+
+// Does role allow action on document?
+// def check_document_policy(Document document, Role role, Action action) -> bool {
+//     // check if att.attestor can perform att.action over document
+//     // that is: att.attestor.role.createabledocuments contains doc.type
+//     return roleAllows(role, action, document.documentType);
+// }
+
+// Rules:
+// -----
+// Rodes role 2 allow action on role 1?
+// def check_role_policy(Role role1, Role role2, Action action) -> bool {
+//     // check if att.attestor.role.assigableroles contains attestor.role
+//     return roleAllows(role1, action, document.documentType);
+// }
+
+def verify_document_attestation(
+    Document document, Attestation attestation) -> bool {
+    Signature signature = attestation.signature;
+    PublicKey publicKey = attestation.attestor.publicKey;
+
+    // Attestor attestor = attestation.attestor;
+    // bool mut roleCheckResult = roleAllows(attestor.role,
+    //     attestation.action, document.documentType);
+
+    bool sigVfResult = verify_document_signature(
+        publicKey, document,
+        signature, attestation.sha256Padding
+    );
+
+    return sigVfResult;
+}
+
+def verify_attestor_attestation(
+    Attestor attestor, Attestation attestation) -> bool {
+
+    Signature signature = attestation.signature;
+    PublicKey publicKey = attestation.attestor.publicKey;
+
+    // bool mut roleCheckResult = check_role_policy(
+    //     attestor.role, attestation.attestor.role, attestation.action
+    //     );
+
+    bool sigVfResult = verify_attestor_signature(
+        publicKey, attestor,
+        signature, attestation.sha256Padding
+    );
+    return sigVfResult;
+}
+
+// This corresponds to VerifyChain from the paper.
+def verify_attestation_chain(
+    Document document,
+    AttestationChain attestations) -> bool {
+    Attestation documentAttestation = attestations[0];
+
+    bool mut result = verify_document_attestation(document,
+        documentAttestation);
+
+    for u32 i in 1..MAX_ATTESTATIONS {
+        Attestation roleAttestion = attestations[i];
+        Attestor attestor = attestations[i - 1].attestor;
+
+        result = result && verify_attestor_attestation(
+            attestor, roleAttestion
+        );
+    }
+
+    result = result && verify_chain_policy(document, attestations);
+
+    return result;
+}
+
+def verify_attestation_chains<N>(PublicKey rootKey,
+        AttestedDocument[N] attestedDocument) -> bool {
+
+    bool mut result = true;
+
+    for u32 i in 0..N {
+        result = result && verify_attestation_chain(
+            attestedDocument[i].document,
+            attestedDocument[i].chain
+        );
+        result = result && attestedDocument[i].chain[MAX_ATTESTATIONS - 1].attestor.publicKey == rootKey;
+    }
+
+    return result;
+}
+
+// def verify_attestation_chains2<N>(
+//     Document[N] documents,
+//     Attestations[N] attestations) -> ProcessedDocument[N] {
+// 
+//     bool mut result = true;
+// 
+//     for u32 i in 0..N {
+//         result = result && verify_attestation_chain(
+//             documents[i], attestations[i]);
+//     }
+// 
+//     return result;
+// }

@@ -1,0 +1,67 @@
+from "./structs" import  AttestationChain, Attestation,
+    Document, AttestedDocument, ProcessedDocument;
+from "./process_rules" import verify_attestation_chains;
+from "./eddsa_common" import PublicKey;
+from "./utils" import prepare_document;
+from "./process_definitions" import
+    verify_lh_policy, LastenHeftAttestationChains, LastenHeftPhaseDocuments;
+
+def main(
+    PublicKey publicKeyFRA,
+    LastenHeftPhaseDocuments docs,
+    LastenHeftAttestationChains chains
+    ) -> bool {
+
+    (AttestedDocument, ProcessedDocument) sa = prepare_document(
+        docs[0], chains[0]);
+
+    (AttestedDocument, ProcessedDocument) tr = prepare_document(
+        docs[1], chains[1]);
+
+    (AttestedDocument, ProcessedDocument) ptd1 = prepare_document(
+        docs[2], chains[2]);
+
+    (AttestedDocument, ProcessedDocument) rs = prepare_document(
+        docs[3], chains[3]);
+
+    (AttestedDocument, ProcessedDocument) suc = prepare_document(
+        docs[4], chains[4]);
+
+    (AttestedDocument, ProcessedDocument) suc2 = prepare_document(
+        docs[5], chains[5]);
+
+    (AttestedDocument, ProcessedDocument) fgv1 = prepare_document(
+        docs[6], chains[6]);
+
+    (AttestedDocument, ProcessedDocument) fgv2 = prepare_document(
+        docs[7], chains[7]);
+
+    (AttestedDocument, ProcessedDocument) ptd = prepare_document(
+        docs[8], chains[8]);
+
+    bool mut result = verify_attestation_chains(publicKeyFRA, [
+        sa.0,
+        tr.0,
+        ptd1.0,
+        rs.0,
+        suc.0,
+        suc2.0,
+        fgv1.0,
+        fgv2.0,
+        ptd.0
+    ]);
+
+    result = result && verify_lh_policy(
+        sa.1,
+        tr.1,
+        ptd1.1,
+        rs.1,
+        suc.1,
+        suc2.1,
+        fgv1.1,
+        fgv2.1,
+        ptd.1
+    );
+
+    return result;
+}

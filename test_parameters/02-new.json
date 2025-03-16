@@ -1,0 +1,117 @@
+[
+  {
+    "name": "lastenheftPhase.attestedDocuments.0.document.documentType",
+    "dest_type": "u32",
+    "value": "00000003",
+    "value_type": "hex"
+  },
+  {
+    "name": "lastenheftPhase.attestedDocuments.0.document.identifier",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "4bab33995a19ad04b3daea0dc8f169dc8e8269f3e4ab0a7a64129d03fcd5334d",
+    "value_type": "hex"
+  },
+  {
+    "name": "lastenheftPhase.attestedDocuments.0.document.referenceDocument",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "value_type": "hex"
+  },
+  {
+    "name": "lastenheftPhase.attestedDocuments.0.document.sha256Padding",
+    "dest_type": "u32[14]",
+    "dest_type_base": "u32",
+    "dest_type_count": 14,
+    "value": "2147483648 0 0 0 0 0 0 0 0 0 0 0 0 1088"
+  },
+  {
+    "name": "lastenheftPhase.attestedDocuments.0.attestations.0.last",
+    "dest_type": "bool",
+    "value": "0"
+  },
+  {
+    "name": "lastenheftPhase.attestedDocuments.0.attestations.0.attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "4229140797740116815431019531563948376608788270454887316987143768779545758279",
+    "value_type": "field"
+  },
+  {
+    "name": "lastenheftPhase.attestedDocuments.0.attestations.0.attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "1070491905818994793262659769647029003609170137070930412388075988068015318526",
+    "value_type": "field"
+  },
+  {
+    "name": "lastenheftPhase.attestedDocuments.0.attestations.0.attestor.role",
+    "dest_type": "u32",
+    "value": "0x03030003",
+    "value_type": "hex"
+  },
+  {
+    "name": "lastenheftPhase.attestedDocuments.0.attestations.0.action",
+    "dest_type": "u32",
+    "value": "00040000",
+    "value_type": "hex"
+  },
+  {
+    "name": "lastenheftPhase.attestedDocuments.0.attestations.0.signature.Rx",
+    "dest_type": "field",
+    "value": "16364000529266308857565181027560040487606172765332919498252776743925911087253"
+  },
+  {
+    "name": "lastenheftPhase.attestedDocuments.0.attestations.0.signature.Ry",
+    "dest_type": "field",
+    "value": "20160012500123830104119850075851888126078642249942068935624969655926454338747"
+  },
+  {
+    "name": "lastenheftPhase.attestedDocuments.0.attestations.0.signature.S",
+    "dest_type": "field",
+    "value": "19033940646087694486837092550477539818646130222474271980814446484352107090716"
+  },
+  {
+    "name": "root.privateKey",
+    "value": "16032566137529416345628293278996957300799762852253615388390862417692052198587",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "root.publicKey.x",
+    "value": "3255133216828558935086165116912572508195259316920592495476425749802887954770",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "root.publicKey.y",
+    "value": "16746717039851600640787457081231922135668743809988785430429915196034068373416",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "operator.privateKey",
+    "value": "3753288838500090957442240597190902025932652387759587393952377626842830960412",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "operator.publicKey.x",
+    "value": "4229140797740116815431019531563948376608788270454887316987143768779545758279",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "operator.publicKey.y",
+    "value": "1070491905818994793262659769647029003609170137070930412388075988068015318526",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "operator.role",
+    "value": "0x03030003",
+    "extra": true,
+    "value_type": "hex"
+  }
+]

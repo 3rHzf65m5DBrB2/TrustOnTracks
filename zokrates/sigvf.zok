@@ -1,0 +1,72 @@
+// Verify a signature using the Poseidon hash.
+import "./verifyEddsa.zok" as verifyEddsa;
+import "utils/casts/u64_to_field" as u64_to_field;
+import "utils/pack/bool/unpack" as unpack;
+import "hashes/poseidon/poseidon" as poseidon;
+
+// Poseidon hash
+type HashPoseidon = field;
+
+// The actual value in a message.
+type MessageValue = u64;
+
+// Public key, using Ed-BabyJubJub
+struct PublicKey {
+    // Curve point.
+    field x;
+    field y;
+}
+
+// Signature, using Ed-BabyJubJub
+struct Signature {
+    // R: Curve point. Hidden version of the per-message nonce.
+    field Rx;
+    field Ry;
+    // S: Field element. Signature to be verified.
+    field S;
+}
+
+// A message's metadata (public).
+struct MessageMetadata {
+    u64 deviceId;
+    u64 messageId;
+    u64 timestamp; // UNIX timestamp
+}
+
+// Hash a message using Poseidon, without salt.
+def hashMessagePoseidonNoSalt(MessageMetadata msg, MessageValue value) -> HashPoseidon {
+    field timestamp_field = u64_to_field(msg.timestamp);
+    field value_field = u64_to_field(value);
+    field[2] inputs = [
+        timestamp_field,
+        value_field
+    ];
+    field hash = poseidon(inputs);
+    // log("msg id = {}", msg.messageId);
+    // // 0x2dd259 = 3002969
+    // log("hash({}) = (field) {}",
+    // inputs, hash);
+    return hash;
+}
+
+
+def verifySignaturePoseidonEddsa(
+    PublicKey publicKey,
+    MessageMetadata msg,
+    MessageValue value,
+    Signature signature,
+    bool isZero) -> bool {
+
+    PublicKey pk =  publicKey;
+    Signature sig = signature;
+    // 1. Calculate hash
+    field hash =  hashMessagePoseidonNoSalt(msg, value);
+    // 2. Check signature of message
+    field hRAM = poseidon([sig.Rx, sig.Ry, pk.x, pk.y, hash]);
+    // log("hRAM = poseidon({}, {}, {}, {}, {}) = {}",
+    //     sig.Rx, sig.Ry, pk.x, pk.y, msg,
+    //     hRAM);
+    bool[256] hRAMBits = unpack(hRAM);
+    bool isVerified = verifyEddsa([sig.Rx, sig.Ry], sig.S, [pk.x, pk.y], hRAMBits);
+    return isVerified;
+}

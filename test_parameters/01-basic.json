@@ -1,0 +1,74 @@
+[
+  {
+    "name": "attestedRole.role.id",
+    "dest_type": "u32",
+    "value": "90"
+  },
+  {
+    "name": "attestedRole.role.attestationKey.x",
+    "dest_type": "field",
+    "value": "13440072229893891660115227895820993884860116215696450592686744391008157187433",
+    "value_type": "field"
+  },
+  {
+    "name": "attestedRole.role.attestationKey.y",
+    "dest_type": "field",
+    "value": "4546056186695182488344970203232424566527007919933459223961226118558217966545",
+    "value_type": "field"
+  },
+  {
+    "name": "attestedRole.role.sha256Padding",
+    "dest_type": "u32[15]",
+    "dest_type_base": "u32",
+    "dest_type_count": 15,
+    "value": "2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "attestedRole.attestation.Rx",
+    "dest_type": "field",
+    "value": "16264316589735553228483693787812598391099707747685048918890716471568504934507",
+    "value_type": "field"
+  },
+  {
+    "name": "attestedRole.attestation.Ry",
+    "dest_type": "field",
+    "value": "880876232165775570567913494619010589597434669310306293356221658704122858910",
+    "value_type": "field"
+  },
+  {
+    "name": "attestedRole.attestation.S",
+    "dest_type": "field",
+    "value": "3354029298058239809697759737035136977489836354324288755208440393573691061443",
+    "value_type": "field"
+  },
+  {
+    "name": "attestedRole.role.attestationPrivateKey",
+    "value": "2464652405058472908924133002310995766610413836476583737508778603938901158468",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "root.privateKey",
+    "value": "10935901057674719980899903140873167887182289814185411883064636212760167188786",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "root.publicKey.x",
+    "value": "4354901284579080769727635845261384512320375614784714484760878297781750377186",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "root.publicKey.y",
+    "value": "1922953876265859724250749607592579110348176266623734855979512314407420947804",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "attestedRole.role.attestedData",
+    "value": "0000005a1db6cfb1cedcc7103b7173c6ac4777aeead39ee1809d947bd3d7e9fa712c3d690a0cfa03b0cb6855d3f9504bb66bee5049aeb44f9ee321969aaf3b90b27893d1",
+    "extra": true,
+    "value_type": "field"
+  }
+]

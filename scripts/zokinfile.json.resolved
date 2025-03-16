@@ -1,0 +1,1757 @@
+[
+  {
+    "name": "rootAuthorityPublicKey.x",
+    "dest_type": "field",
+    "value": "7362941721023678786243406346492892406409318974110941276067882770753166823352",
+    "value_type": "field"
+  },
+  {
+    "name": "rootAuthorityPublicKey.y",
+    "dest_type": "field",
+    "value": "11781746728568090323248158617798903587338318205416635529352274848513563011909",
+    "value_type": "field"
+  },
+  {
+    "name": "lhdocs[0].documentType",
+    "dest_type": "u32",
+    "value": "00000002",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[0].identifier",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "9f7e897b354721fc1d3cbeb3a795f5692831377f98f804f7f1c610587dfc38ab",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[0].referenceDocuments",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[1].documentType",
+    "dest_type": "u32",
+    "value": "00000004",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[1].identifier",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "64adf19f84960dd31733808665026f36cb905a7b3e04aa861c8cf59f5fbad422",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[1].referenceDocuments",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[2].documentType",
+    "dest_type": "u32",
+    "value": "00000008",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[2].identifier",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "28ae6a74ba769f4dfd77dba9041342bfd931683797751f85f3f3b66c4292087b",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[2].referenceDocuments",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[3].documentType",
+    "dest_type": "u32",
+    "value": "00000010",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[3].identifier",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "daa30a65af6e395b33449bce4e7a750931e4398e21035b994cb42abe4f6c6d19",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[3].referenceDocuments",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[4].documentType",
+    "dest_type": "u32",
+    "value": "00000020",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[4].identifier",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "45f038f595475b19e6b4ae74326be6f9f0c1b317c02b22def95cd1b3228dbd36",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[4].referenceDocuments",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "04346ad0c0b9fd792b737de07c1c9988c04efb2857ffce60948cdaaca3d5e37c",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[5].documentType",
+    "dest_type": "u32",
+    "value": "00000040",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[5].identifier",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "5624ae5e1e3e303bbc122a48db368d1f189ffb2456b240c152c901957b7fb307",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[5].referenceDocuments",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[6].documentType",
+    "dest_type": "u32",
+    "value": "00000080",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[6].identifier",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "f5e20dd3916b1e9124753244160ee7f235ea3aa359bbe349b103c2a29f32a7ad",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[6].referenceDocuments",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[7].documentType",
+    "dest_type": "u32",
+    "value": "00000100",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[7].identifier",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "4b57c4a9a6888216b56ee8def4d7303f1dcef3e5039ebc8fc1b98542314e545b",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[7].referenceDocuments",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[8].documentType",
+    "dest_type": "u32",
+    "value": "00000200",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[8].identifier",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "2e8c7a3e2fb6248dd93ed76986e414506fe28138f6cd805fe482972d9264f1ec",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhdocs[8].referenceDocuments",
+    "dest_type": "u32[8]",
+    "dest_type_base": "u32",
+    "dest_type_count": 8,
+    "value": "8cfcbc9158aeb439b6561cd5204d1952fe7f5b1ee76203ee55a6b109f6621b84",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[0][0].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[0][0].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "00000002",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[0][0].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "18759067574314165395764525486335851781780161366359725267530694578829944997246",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[0][0].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "21089935818500870762948796511878412095848191905008206354219304000201577782279",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[0][0].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[0][0].signature.Rx",
+    "dest_type": "field",
+    "value": "13037492105017798034244759936252553959723646569572034658535132831139996048890"
+  },
+  {
+    "name": "lhchains[0][0].signature.Ry",
+    "dest_type": "field",
+    "value": "1367077188854039030342958786983880506712282510961275815698539860437213707735"
+  },
+  {
+    "name": "lhchains[0][0].signature.S",
+    "dest_type": "field",
+    "value": "4264545629668393594085837312472240089426191724068836452898616169675125194613"
+  },
+  {
+    "name": "lhchains[0][1].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[0][1].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "00000002",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[0][1].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "18759067574314165395764525486335851781780161366359725267530694578829944997246",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[0][1].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "21089935818500870762948796511878412095848191905008206354219304000201577782279",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[0][1].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[0][1].signature.Rx",
+    "dest_type": "field",
+    "value": "4772725706472069876877979552149639090207469280088230424728535646156029702777"
+  },
+  {
+    "name": "lhchains[0][1].signature.Ry",
+    "dest_type": "field",
+    "value": "14982176070190111553681044703896699744388937310267526414310150441383473953477"
+  },
+  {
+    "name": "lhchains[0][1].signature.S",
+    "dest_type": "field",
+    "value": "5842143062312561577860075022401452211479384362998045717442016576792495464884"
+  },
+  {
+    "name": "lhchains[0][2].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[0][2].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "ffffffff",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[0][2].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "7362941721023678786243406346492892406409318974110941276067882770753166823352",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[0][2].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "11781746728568090323248158617798903587338318205416635529352274848513563011909",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[0][2].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[0][2].signature.Rx",
+    "dest_type": "field",
+    "value": "19956297095114934173780234368818073739297764105661126412811855189250028075967"
+  },
+  {
+    "name": "lhchains[0][2].signature.Ry",
+    "dest_type": "field",
+    "value": "12667647659730395440749573686570375463147028087506816791240954788782559497675"
+  },
+  {
+    "name": "lhchains[0][2].signature.S",
+    "dest_type": "field",
+    "value": "2330590206109701371268431440569602686230403437737426112545782677235639451236"
+  },
+  {
+    "name": "lhchains[1][0].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[1][0].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "00000004",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[1][0].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "2601763538948866325115591000205440236991013802870918951120573065249264874001",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[1][0].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "8152260021965103103784948869876280231853528267813157679085641684269904921066",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[1][0].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[1][0].signature.Rx",
+    "dest_type": "field",
+    "value": "20104717885958793285431259284977514671120983194262956363950270212060704423781"
+  },
+  {
+    "name": "lhchains[1][0].signature.Ry",
+    "dest_type": "field",
+    "value": "19400563114836246454391530502793891356150343094571551483719597572883607835679"
+  },
+  {
+    "name": "lhchains[1][0].signature.S",
+    "dest_type": "field",
+    "value": "15668812785879680095953991674931284859846245147409600988671654784889948693133"
+  },
+  {
+    "name": "lhchains[1][1].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[1][1].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "00000004",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[1][1].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "2601763538948866325115591000205440236991013802870918951120573065249264874001",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[1][1].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "8152260021965103103784948869876280231853528267813157679085641684269904921066",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[1][1].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[1][1].signature.Rx",
+    "dest_type": "field",
+    "value": "6144912176390074247907152927424141170600722383730636656436961118715831440504"
+  },
+  {
+    "name": "lhchains[1][1].signature.Ry",
+    "dest_type": "field",
+    "value": "19018871983278780744790040651789741631434914493704199956832576562661761304380"
+  },
+  {
+    "name": "lhchains[1][1].signature.S",
+    "dest_type": "field",
+    "value": "3474180064160102043884662305641177963181058016378338180937692976250490104636"
+  },
+  {
+    "name": "lhchains[1][2].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[1][2].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "ffffffff",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[1][2].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "7362941721023678786243406346492892406409318974110941276067882770753166823352",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[1][2].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "11781746728568090323248158617798903587338318205416635529352274848513563011909",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[1][2].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[1][2].signature.Rx",
+    "dest_type": "field",
+    "value": "19512011714503855055278245675679150439170776548319612185573589734634616398083"
+  },
+  {
+    "name": "lhchains[1][2].signature.Ry",
+    "dest_type": "field",
+    "value": "12603968267057385857549698661964347481945193347851552028762479805566455347509"
+  },
+  {
+    "name": "lhchains[1][2].signature.S",
+    "dest_type": "field",
+    "value": "4042381879051870568961883629483811132535853066805781208400232531486396184047"
+  },
+  {
+    "name": "lhchains[2][0].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[2][0].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "00000008",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[2][0].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "973004804605120201626590919126749240183229238562354112182375787536359289861",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[2][0].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "10905255341713487117469702875617909041820828050588019396718984507291751583338",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[2][0].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[2][0].signature.Rx",
+    "dest_type": "field",
+    "value": "4600708169437358416031757070014421490125543322899390408775049973947281201468"
+  },
+  {
+    "name": "lhchains[2][0].signature.Ry",
+    "dest_type": "field",
+    "value": "11005518758174321760164473886018215088638562808313726202198714041191343110932"
+  },
+  {
+    "name": "lhchains[2][0].signature.S",
+    "dest_type": "field",
+    "value": "8997837790436114733648700356458438521486162523280597521544099082039878170218"
+  },
+  {
+    "name": "lhchains[2][1].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[2][1].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "00000001",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[2][1].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "11053155962715119791239640208767225852100253974737663612998216227449460606154",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[2][1].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "18407398894252819769695647436391857549523215805138411253240137682014516990598",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[2][1].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[2][1].signature.Rx",
+    "dest_type": "field",
+    "value": "20216470417193829186011940105667198209188021856128279580543937901909933843218"
+  },
+  {
+    "name": "lhchains[2][1].signature.Ry",
+    "dest_type": "field",
+    "value": "12237172533376226825228951734235946345247470580475160353108804796024016668330"
+  },
+  {
+    "name": "lhchains[2][1].signature.S",
+    "dest_type": "field",
+    "value": "19349130469994152628779780303412029204966169352205895033916631505420846887213"
+  },
+  {
+    "name": "lhchains[2][2].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[2][2].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "ffffffff",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[2][2].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "7362941721023678786243406346492892406409318974110941276067882770753166823352",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[2][2].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "11781746728568090323248158617798903587338318205416635529352274848513563011909",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[2][2].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[2][2].signature.Rx",
+    "dest_type": "field",
+    "value": "7324048205343104967520676416479612710289621266594970391244788111462235030913"
+  },
+  {
+    "name": "lhchains[2][2].signature.Ry",
+    "dest_type": "field",
+    "value": "14372831943128612971203110263965992269753516216850156438877475115151110331710"
+  },
+  {
+    "name": "lhchains[2][2].signature.S",
+    "dest_type": "field",
+    "value": "664294515201488788178267396158433247943769215991237922981805202219253433241"
+  },
+  {
+    "name": "lhchains[3][0].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[3][0].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "00000030",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[3][0].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "20048296058807021265478233482548381053488787676969800073960988002657727922583",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[3][0].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "8539588593275812315127851994844706870429830946675378275817523915355241092893",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[3][0].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[3][0].signature.Rx",
+    "dest_type": "field",
+    "value": "12994454186313864212711615482204629410704502363234416035517285039398493472218"
+  },
+  {
+    "name": "lhchains[3][0].signature.Ry",
+    "dest_type": "field",
+    "value": "13787154765388056217167001043511150349103825906586539099267208053744292223881"
+  },
+  {
+    "name": "lhchains[3][0].signature.S",
+    "dest_type": "field",
+    "value": "10162242519084116237142120548833072361172964967362327344383788300421559539527"
+  },
+  {
+    "name": "lhchains[3][1].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[3][1].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "00000001",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[3][1].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "11053155962715119791239640208767225852100253974737663612998216227449460606154",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[3][1].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "18407398894252819769695647436391857549523215805138411253240137682014516990598",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[3][1].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[3][1].signature.Rx",
+    "dest_type": "field",
+    "value": "19502252824331240939268974961117770383054414679394197151298225893399120627886"
+  },
+  {
+    "name": "lhchains[3][1].signature.Ry",
+    "dest_type": "field",
+    "value": "6344238700535706968363968305617410171622397456954721132253362315765432676711"
+  },
+  {
+    "name": "lhchains[3][1].signature.S",
+    "dest_type": "field",
+    "value": "11348544056864361359661299724012678274574775564549563794922369296569234258977"
+  },
+  {
+    "name": "lhchains[3][2].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[3][2].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "ffffffff",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[3][2].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "7362941721023678786243406346492892406409318974110941276067882770753166823352",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[3][2].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "11781746728568090323248158617798903587338318205416635529352274848513563011909",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[3][2].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[3][2].signature.Rx",
+    "dest_type": "field",
+    "value": "7324048205343104967520676416479612710289621266594970391244788111462235030913"
+  },
+  {
+    "name": "lhchains[3][2].signature.Ry",
+    "dest_type": "field",
+    "value": "14372831943128612971203110263965992269753516216850156438877475115151110331710"
+  },
+  {
+    "name": "lhchains[3][2].signature.S",
+    "dest_type": "field",
+    "value": "664294515201488788178267396158433247943769215991237922981805202219253433241"
+  },
+  {
+    "name": "lhchains[4][0].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[4][0].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "00000030",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[4][0].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "20048296058807021265478233482548381053488787676969800073960988002657727922583",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[4][0].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "8539588593275812315127851994844706870429830946675378275817523915355241092893",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[4][0].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[4][0].signature.Rx",
+    "dest_type": "field",
+    "value": "6223288108148112071730567647401661272730969903318283181515133866089529254146"
+  },
+  {
+    "name": "lhchains[4][0].signature.Ry",
+    "dest_type": "field",
+    "value": "12757484148321196492731530550906546146565761065063242437678622367319418927570"
+  },
+  {
+    "name": "lhchains[4][0].signature.S",
+    "dest_type": "field",
+    "value": "2755783127246298690775865631487748004748329107991070396036091090167990163707"
+  },
+  {
+    "name": "lhchains[4][1].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[4][1].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "00000001",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[4][1].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "11053155962715119791239640208767225852100253974737663612998216227449460606154",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[4][1].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "18407398894252819769695647436391857549523215805138411253240137682014516990598",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[4][1].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[4][1].signature.Rx",
+    "dest_type": "field",
+    "value": "19502252824331240939268974961117770383054414679394197151298225893399120627886"
+  },
+  {
+    "name": "lhchains[4][1].signature.Ry",
+    "dest_type": "field",
+    "value": "6344238700535706968363968305617410171622397456954721132253362315765432676711"
+  },
+  {
+    "name": "lhchains[4][1].signature.S",
+    "dest_type": "field",
+    "value": "11348544056864361359661299724012678274574775564549563794922369296569234258977"
+  },
+  {
+    "name": "lhchains[4][2].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[4][2].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "ffffffff",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[4][2].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "7362941721023678786243406346492892406409318974110941276067882770753166823352",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[4][2].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "11781746728568090323248158617798903587338318205416635529352274848513563011909",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[4][2].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[4][2].signature.Rx",
+    "dest_type": "field",
+    "value": "7324048205343104967520676416479612710289621266594970391244788111462235030913"
+  },
+  {
+    "name": "lhchains[4][2].signature.Ry",
+    "dest_type": "field",
+    "value": "14372831943128612971203110263965992269753516216850156438877475115151110331710"
+  },
+  {
+    "name": "lhchains[4][2].signature.S",
+    "dest_type": "field",
+    "value": "664294515201488788178267396158433247943769215991237922981805202219253433241"
+  },
+  {
+    "name": "lhchains[5][0].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[5][0].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "00000240",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[5][0].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "8036398114276592278408852520098913344612311830209674757236857888498752569977",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[5][0].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "1083912378553032190056097087319924871262851100651901016542461411761630687604",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[5][0].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[5][0].signature.Rx",
+    "dest_type": "field",
+    "value": "11052622544800355785285688117304156159052040281162115720166976109101826913285"
+  },
+  {
+    "name": "lhchains[5][0].signature.Ry",
+    "dest_type": "field",
+    "value": "16347826859800003194795471334040390679231925877741783885262119113405713590514"
+  },
+  {
+    "name": "lhchains[5][0].signature.S",
+    "dest_type": "field",
+    "value": "13947700854664836273802664346883292360210914059165406677653435794072873555793"
+  },
+  {
+    "name": "lhchains[5][1].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[5][1].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "00000001",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[5][1].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "11053155962715119791239640208767225852100253974737663612998216227449460606154",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[5][1].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "18407398894252819769695647436391857549523215805138411253240137682014516990598",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[5][1].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[5][1].signature.Rx",
+    "dest_type": "field",
+    "value": "20464734141374949446009461709192281606501717656396393813995645907108130498787"
+  },
+  {
+    "name": "lhchains[5][1].signature.Ry",
+    "dest_type": "field",
+    "value": "21432944069718592206668268988099267377934791863565161528657866019087099621627"
+  },
+  {
+    "name": "lhchains[5][1].signature.S",
+    "dest_type": "field",
+    "value": "10828856588946670366924562910806805778290164694033881128804900625657009482840"
+  },
+  {
+    "name": "lhchains[5][2].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[5][2].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "ffffffff",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[5][2].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "7362941721023678786243406346492892406409318974110941276067882770753166823352",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[5][2].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "11781746728568090323248158617798903587338318205416635529352274848513563011909",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[5][2].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[5][2].signature.Rx",
+    "dest_type": "field",
+    "value": "7324048205343104967520676416479612710289621266594970391244788111462235030913"
+  },
+  {
+    "name": "lhchains[5][2].signature.Ry",
+    "dest_type": "field",
+    "value": "14372831943128612971203110263965992269753516216850156438877475115151110331710"
+  },
+  {
+    "name": "lhchains[5][2].signature.S",
+    "dest_type": "field",
+    "value": "664294515201488788178267396158433247943769215991237922981805202219253433241"
+  },
+  {
+    "name": "lhchains[6][0].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[6][0].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "00000240",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[6][0].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "8036398114276592278408852520098913344612311830209674757236857888498752569977",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[6][0].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "1083912378553032190056097087319924871262851100651901016542461411761630687604",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[6][0].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[6][0].signature.Rx",
+    "dest_type": "field",
+    "value": "2000930648129889757081560077496165133530783121483688399848220452908543623305"
+  },
+  {
+    "name": "lhchains[6][0].signature.Ry",
+    "dest_type": "field",
+    "value": "1841675924253933484255104417830901686438079431683454675790617974258322226122"
+  },
+  {
+    "name": "lhchains[6][0].signature.S",
+    "dest_type": "field",
+    "value": "10747168307866815076754407268850212971933309414883704988805601721131414623357"
+  },
+  {
+    "name": "lhchains[6][1].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[6][1].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "00000001",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[6][1].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "11053155962715119791239640208767225852100253974737663612998216227449460606154",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[6][1].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "18407398894252819769695647436391857549523215805138411253240137682014516990598",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[6][1].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[6][1].signature.Rx",
+    "dest_type": "field",
+    "value": "20464734141374949446009461709192281606501717656396393813995645907108130498787"
+  },
+  {
+    "name": "lhchains[6][1].signature.Ry",
+    "dest_type": "field",
+    "value": "21432944069718592206668268988099267377934791863565161528657866019087099621627"
+  },
+  {
+    "name": "lhchains[6][1].signature.S",
+    "dest_type": "field",
+    "value": "10828856588946670366924562910806805778290164694033881128804900625657009482840"
+  },
+  {
+    "name": "lhchains[6][2].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[6][2].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "ffffffff",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[6][2].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "7362941721023678786243406346492892406409318974110941276067882770753166823352",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[6][2].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "11781746728568090323248158617798903587338318205416635529352274848513563011909",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[6][2].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[6][2].signature.Rx",
+    "dest_type": "field",
+    "value": "7324048205343104967520676416479612710289621266594970391244788111462235030913"
+  },
+  {
+    "name": "lhchains[6][2].signature.Ry",
+    "dest_type": "field",
+    "value": "14372831943128612971203110263965992269753516216850156438877475115151110331710"
+  },
+  {
+    "name": "lhchains[6][2].signature.S",
+    "dest_type": "field",
+    "value": "664294515201488788178267396158433247943769215991237922981805202219253433241"
+  },
+  {
+    "name": "lhchains[7][0].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[7][0].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "ffffffff",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[7][0].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "7362941721023678786243406346492892406409318974110941276067882770753166823352",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[7][0].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "11781746728568090323248158617798903587338318205416635529352274848513563011909",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[7][0].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[7][0].signature.Rx",
+    "dest_type": "field",
+    "value": "17662866577772439767280808565778475581350466492537544196539669367283590373705"
+  },
+  {
+    "name": "lhchains[7][0].signature.Ry",
+    "dest_type": "field",
+    "value": "21469822706387079817458103418902360092176209929233092676554816891846300929295"
+  },
+  {
+    "name": "lhchains[7][0].signature.S",
+    "dest_type": "field",
+    "value": "13327047192790533826199983349782635343619489729192685213811822804457439597572"
+  },
+  {
+    "name": "lhchains[7][1].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[7][1].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "ffffffff",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[7][1].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "7362941721023678786243406346492892406409318974110941276067882770753166823352",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[7][1].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "11781746728568090323248158617798903587338318205416635529352274848513563011909",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[7][1].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[7][1].signature.Rx",
+    "dest_type": "field",
+    "value": "20067580191192357508641814205437887345125198632260230390432545037326482230549"
+  },
+  {
+    "name": "lhchains[7][1].signature.Ry",
+    "dest_type": "field",
+    "value": "3164944449855337348239190702180224087263399941490667498919438907004033285123"
+  },
+  {
+    "name": "lhchains[7][1].signature.S",
+    "dest_type": "field",
+    "value": "5960686851679098160952701247175760381732757058209405736412355129786317766633"
+  },
+  {
+    "name": "lhchains[7][2].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[7][2].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "ffffffff",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[7][2].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "7362941721023678786243406346492892406409318974110941276067882770753166823352",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[7][2].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "11781746728568090323248158617798903587338318205416635529352274848513563011909",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[7][2].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[7][2].signature.Rx",
+    "dest_type": "field",
+    "value": "20067580191192357508641814205437887345125198632260230390432545037326482230549"
+  },
+  {
+    "name": "lhchains[7][2].signature.Ry",
+    "dest_type": "field",
+    "value": "3164944449855337348239190702180224087263399941490667498919438907004033285123"
+  },
+  {
+    "name": "lhchains[7][2].signature.S",
+    "dest_type": "field",
+    "value": "5960686851679098160952701247175760381732757058209405736412355129786317766633"
+  },
+  {
+    "name": "lhchains[8][0].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[8][0].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "ffffffff",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[8][0].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "7362941721023678786243406346492892406409318974110941276067882770753166823352",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[8][0].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "11781746728568090323248158617798903587338318205416635529352274848513563011909",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[8][0].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[8][0].signature.Rx",
+    "dest_type": "field",
+    "value": "18150404588438637709044172071660360429756151738778155868099924124991535076893"
+  },
+  {
+    "name": "lhchains[8][0].signature.Ry",
+    "dest_type": "field",
+    "value": "21150138564715767906934817122088176862403546056447637620011317796001134877900"
+  },
+  {
+    "name": "lhchains[8][0].signature.S",
+    "dest_type": "field",
+    "value": "19742793761986140324985357169254459761149457409050077839297554950144020651039"
+  },
+  {
+    "name": "lhchains[8][1].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[8][1].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "ffffffff",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[8][1].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "7362941721023678786243406346492892406409318974110941276067882770753166823352",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[8][1].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "11781746728568090323248158617798903587338318205416635529352274848513563011909",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[8][1].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[8][1].signature.Rx",
+    "dest_type": "field",
+    "value": "20067580191192357508641814205437887345125198632260230390432545037326482230549"
+  },
+  {
+    "name": "lhchains[8][1].signature.Ry",
+    "dest_type": "field",
+    "value": "3164944449855337348239190702180224087263399941490667498919438907004033285123"
+  },
+  {
+    "name": "lhchains[8][1].signature.S",
+    "dest_type": "field",
+    "value": "5960686851679098160952701247175760381732757058209405736412355129786317766633"
+  },
+  {
+    "name": "lhchains[8][2].is_set",
+    "dest_type": "bool",
+    "value": "1"
+  },
+  {
+    "name": "lhchains[8][2].attestor.role.documentTypes",
+    "dest_type": "u32",
+    "value": "ffffffff",
+    "value_type": "hex"
+  },
+  {
+    "name": "lhchains[8][2].attestor.publicKey.x",
+    "dest_type": "field",
+    "value": "7362941721023678786243406346492892406409318974110941276067882770753166823352",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[8][2].attestor.publicKey.y",
+    "dest_type": "field",
+    "value": "11781746728568090323248158617798903587338318205416635529352274848513563011909",
+    "value_type": "field"
+  },
+  {
+    "name": "lhchains[8][2].sha256Padding",
+    "dest_type": "u32[16]",
+    "dest_type_base": "u32",
+    "dest_type_count": 16,
+    "value": "0 2147483648 0 0 0 0 0 0 0 0 0 0 0 0 0 1056"
+  },
+  {
+    "name": "lhchains[8][2].signature.Rx",
+    "dest_type": "field",
+    "value": "20067580191192357508641814205437887345125198632260230390432545037326482230549"
+  },
+  {
+    "name": "lhchains[8][2].signature.Ry",
+    "dest_type": "field",
+    "value": "3164944449855337348239190702180224087263399941490667498919438907004033285123"
+  },
+  {
+    "name": "lhchains[8][2].signature.S",
+    "dest_type": "field",
+    "value": "5960686851679098160952701247175760381732757058209405736412355129786317766633"
+  },
+  {
+    "name": "root.privateKey",
+    "value": "4133236722883065504405826483984920628902312700551475112826291945118078767166",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "root.publicKey.x",
+    "value": "7362941721023678786243406346492892406409318974110941276067882770753166823352",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "root.publicKey.y",
+    "value": "11781746728568090323248158617798903587338318205416635529352274848513563011909",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "root.role.documentTypes",
+    "value": "ffffffff",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "ASBO.privateKey",
+    "value": "272509648473084940708262562680698762601519249699660617769994542710596122698",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "ASBO.publicKey.x",
+    "value": "18759067574314165395764525486335851781780161366359725267530694578829944997246",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "ASBO.publicKey.y",
+    "value": "21089935818500870762948796511878412095848191905008206354219304000201577782279",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "ASBO.role.documentTypes",
+    "value": "00000002",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "DEBO.privateKey",
+    "value": "7410431875316384375377299126909308016918662910295583684611882713088237441880",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "DEBO.publicKey.x",
+    "value": "2601763538948866325115591000205440236991013802870918951120573065249264874001",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "DEBO.publicKey.y",
+    "value": "8152260021965103103784948869876280231853528267813157679085641684269904921066",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "DEBO.role.documentTypes",
+    "value": "00000004",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "FGV1.privateKey",
+    "value": "1997594637316051539290909520612609256725036664954971075756176537955771666273",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "FGV1.publicKey.x",
+    "value": "973004804605120201626590919126749240183229238562354112182375787536359289861",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "FGV1.publicKey.y",
+    "value": "10905255341713487117469702875617909041820828050588019396718984507291751583338",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "FGV1.role.documentTypes",
+    "value": "00000008",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "BAV.privateKey",
+    "value": "3013399545059461889321780103029760247668891922381552426394210652960681289518",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "BAV.publicKey.x",
+    "value": "20048296058807021265478233482548381053488787676969800073960988002657727922583",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "BAV.publicKey.y",
+    "value": "8539588593275812315127851994844706870429830946675378275817523915355241092893",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "BAV.role.documentTypes",
+    "value": "00000030",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "FGV2.privateKey",
+    "value": "17649042999540852598367466442950974623597469494723335022971569570192960859015",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "FGV2.publicKey.x",
+    "value": "8036398114276592278408852520098913344612311830209674757236857888498752569977",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "FGV2.publicKey.y",
+    "value": "1083912378553032190056097087319924871262851100651901016542461411761630687604",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "FGV2.role.documentTypes",
+    "value": "00000240",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "OPERATOR.privateKey",
+    "value": "8800010517724703747873888682936756226565901717513870457644851051159948158460",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "OPERATOR.publicKey.x",
+    "value": "11053155962715119791239640208767225852100253974737663612998216227449460606154",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "OPERATOR.publicKey.y",
+    "value": "18407398894252819769695647436391857549523215805138411253240137682014516990598",
+    "extra": true,
+    "value_type": "field"
+  },
+  {
+    "name": "OPERATOR.role.documentTypes",
+    "value": "00000001",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.SA.identifier",
+    "value": "9f7e897b354721fc1d3cbeb3a795f5692831377f98f804f7f1c610587dfc38ab",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.SA.documentType",
+    "value": "00000002",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.SA.referenceDocuments",
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.TR.identifier",
+    "value": "64adf19f84960dd31733808665026f36cb905a7b3e04aa861c8cf59f5fbad422",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.TR.documentType",
+    "value": "00000004",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.TR.referenceDocuments",
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.PTD1.identifier",
+    "value": "28ae6a74ba769f4dfd77dba9041342bfd931683797751f85f3f3b66c4292087b",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.PTD1.documentType",
+    "value": "00000008",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.PTD1.referenceDocuments",
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.RS.identifier",
+    "value": "daa30a65af6e395b33449bce4e7a750931e4398e21035b994cb42abe4f6c6d19",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.RS.documentType",
+    "value": "00000010",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.RS.referenceDocuments",
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.SUC.identifier",
+    "value": "45f038f595475b19e6b4ae74326be6f9f0c1b317c02b22def95cd1b3228dbd36",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.SUC.documentType",
+    "value": "00000020",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.SUC.referenceDocuments",
+    "value": "04346ad0c0b9fd792b737de07c1c9988c04efb2857ffce60948cdaaca3d5e37c",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.SUC2.identifier",
+    "value": "5624ae5e1e3e303bbc122a48db368d1f189ffb2456b240c152c901957b7fb307",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.SUC2.documentType",
+    "value": "00000040",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.SUC2.referenceDocuments",
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.FGV.identifier",
+    "value": "f5e20dd3916b1e9124753244160ee7f235ea3aa359bbe349b103c2a29f32a7ad",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.FGV.documentType",
+    "value": "00000080",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.FGV.referenceDocuments",
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.FGV2.identifier",
+    "value": "4b57c4a9a6888216b56ee8def4d7303f1dcef3e5039ebc8fc1b98542314e545b",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.FGV2.documentType",
+    "value": "00000100",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.FGV2.referenceDocuments",
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.PTD.identifier",
+    "value": "2e8c7a3e2fb6248dd93ed76986e414506fe28138f6cd805fe482972d9264f1ec",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.PTD.documentType",
+    "value": "00000200",
+    "extra": true,
+    "value_type": "hex"
+  },
+  {
+    "name": "document.PTD.referenceDocuments",
+    "value": "8cfcbc9158aeb439b6561cd5204d1952fe7f5b1ee76203ee55a6b109f6621b84",
+    "extra": true,
+    "value_type": "hex"
+  }
+]
